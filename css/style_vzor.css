@@ -1,0 +1,610 @@
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 5em;
+}
+
+body{
+    background-color: whitesmoke;
+    color: white;
+    font-family: Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+h2, h3{
+    text-transform: uppercase;
+    text-align: center;
+    margin: 1em;
+}
+
+h2{
+    margin: 5em 0 2em;
+    color: #3B3837;
+}
+
+/* NAVIGATION */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3B3837;
+    width: 100%;
+}
+
+header p{
+    margin: 0 2em;
+   
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+}
+
+
+ul{
+    list-style: none;
+    padding: 0 0 0 15px;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+}
+
+.menu li{
+    margin-right: 1.5em;
+    padding: 0.5em;
+    box-shadow: 0 0 5px #DFD7D6;
+}
+
+.menu li:hover,
+.menu li:focus{
+    background-color: #8d8988;
+    box-shadow: none;
+}
+
+/* MAIN */
+
+/* LOGO */
+
+.logo{
+    background-color: white;
+}
+
+.logo img{
+    margin: 0px auto;
+    width: 50%;
+    height: auto;
+}
+
+.background_image img{
+    max-width: 100%;
+    height: auto;
+}
+
+/* ABOUT US */
+
+.about_us,
+.contact{
+    padding: 4em;
+    text-align: justify;
+    box-sizing: border-box;
+    background: linear-gradient(#8d8988, #3B3837);
+    box-shadow: 0px 0px 15px black;
+}
+
+.about_us q,
+.about_us span p{
+    width: 80%;
+    font-size: 0.7em;
+    line-height: 1.7em;
+    margin: 0;
+}
+
+.about_us span{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+    padding-top: 1em;
+}
+
+.our_work,
+.about_us,
+.contact{
+    width: 60%;
+    margin: 0 auto ;
+    margin-top: 2em;
+    line-height: 2em;
+}
+
+/* PORTFOLIO */
+
+.portfolio section{
+   border-radius: 0.4em;
+   display: flex;
+   align-items: center;
+   color: white;
+   justify-content: center;
+   background-color: rgb(191, 4, 4);
+   box-shadow: 0px 0px 15px #3B3837;
+   text-shadow: 0px 0px 15px #3B3837;
+   padding: 25% 0;
+}
+
+.portfolio section:hover:not(.nine){
+    background-color: rgba(191, 4, 4, 0.75);
+    box-shadow: 0px 0px 25px #3B3837;
+    cursor: pointer;
+    text-shadow: none;
+}
+
+/* PORTFOLIO - GRID */
+
+.portfolio{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1.8em;
+}
+
+.one{
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.two{
+    grid-column: 2;
+    grid-row: 1; 
+}
+
+.three{
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.four{
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.five{
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.six{
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.seven{
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.eight{
+    grid-column: 3;
+    grid-row: 3;
+}
+
+.nine {
+    grid-column: 2;
+    grid-row: 2;
+    
+    
+}
+
+section .nine{
+    background-color: white;
+    background-image: url(/img/DELP.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+/* PREWIEW SECTION */
+
+
+.prewiew section{
+    color: whitesmoke; 
+    text-align: justify;
+    background-color: rgb(191, 4, 4);
+    padding: 2em;
+    margin: 1em 0;
+    border-radius: 1em;
+    box-shadow: 0px 0px 15px #3B3837;
+ }
+
+.prewiew li{
+    line-height: 1.2em;
+    font-size: 0.8em;
+    padding-left: 5px;
+}
+
+.prewiew ul{
+    list-style: "- ";
+}
+
+
+
+.prew {
+    position: relative;
+}
+
+.prew p{
+    margin: 0 2em 0 0;
+    line-height: 1.4em;
+}
+
+.exit{
+    position: absolute;
+    top: 1.5em;
+    right: 1.5em;
+    margin: 0;
+}
+
+.exit:hover{
+    cursor: pointer;
+    color: #3B3837;
+}
+
+
+/* PREWIEW CONTACT */
+
+.call_me{
+    text-align: center;
+}
+
+.call_me a{
+    text-transform: uppercase;
+    color: whitesmoke;
+    font-size: 0.7em;
+    
+    
+}
+
+.call_me i{
+    margin: 1em;
+    font-size: 0.8em;
+}
+
+/* PREWIEW GALLERY */
+
+.container{
+    display: flex;
+}
+
+.gallery{
+    display: grid;
+    gap: 1em;
+    grid-template-columns: 200px 200px;
+}
+
+.gallery img{
+    width: 200px;
+}
+
+/* CONTACT SECTION */
+
+.aside{
+    display: flex;
+    justify-content: space-between;
+    line-height: 0.5em;
+}
+
+.tel, .mail{
+    display: flex;
+    align-items: center;
+    font-size: 2em;    
+}
+
+.tel_mail{
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+}
+
+.aside_2{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    font-size: 0.8em;
+    margin-top: 3em;
+}
+
+.aside_2 p strong{
+    font-size: 1.4em;
+}
+
+
+.aside_2 p{
+    margin: 0;
+    line-height: 1.4em;
+}
+
+i{
+    margin-right: 1em;
+}
+
+/* FOOTER */
+
+footer{
+    border-top: #DFD7D6 solid 2px;
+    padding: 1.2em;
+    font-size: .7em;
+    background-color: #131212;
+    margin-top: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+footer p{
+    margin: 0 3em 0 0;
+}
+
+
+
+/* MEDIA QUERIES */
+
+
+@media(max-width: 1460px){
+        
+    .tel,
+    .mail{
+        font-size: 1.8em;
+    }
+}
+
+@media(max-width: 1415px){
+        
+    .our_work,
+    .about_us,
+    .contact{
+        width: 80%;
+        
+    }
+
+    .about_us,
+    .contact{
+        padding: 3em;
+    }
+}
+
+
+@media(max-width: 1035px){
+    
+    header{
+        font-size: 0.8em;
+    }
+
+    .our_work,
+    .about_us,
+    .contact{
+        width: 90%;
+    }
+
+    .about_us,
+    .contact{
+        padding: 2.3em;
+    }
+}
+
+@media(max-width: 900px) {
+   
+    .gallery{
+    grid-template-columns: 50% 50%;
+    gap: 0.2em;
+   }
+   
+    .gallery img{
+    width: 100%;
+
+   }
+    .tel,
+    .mail{
+        font-size: 1.6em;
+    }
+}
+
+@media(max-width: 835px){
+    
+    h3{
+        font-size: 1em;
+    }
+
+    header{
+        font-size: 0.6em;
+    }
+
+    .about_us,
+    .contact{
+        line-height: 1.5em;
+    }
+
+    .portfolio{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 1em;
+    }
+
+    .tel,
+    .mail{
+        font-size: 1.2em;
+    }
+}
+
+@media(max-width: 730px){
+    
+    h3{
+        font-size: 0.7em;
+    }
+
+    .about_us,
+    .contact{
+        padding: 1.75em;
+    }
+
+    .portfolio section{
+        padding: 10% 0;
+    }
+
+    .container{
+        flex-direction: column;
+    }
+
+    .container-info p{
+        margin: 0;
+    }
+
+    iframe{
+        width: 240px;
+    }
+
+    .aside_2{
+        font-size: 0.6em;
+    }
+
+    .aside_2 strong{
+        font-size: 1em;
+    }
+}
+
+@media(max-width: 635px){
+        
+    h2{
+        margin: 3em 0 2em;
+    }
+
+    h3{
+        font-size: 1.6em;
+    }
+
+    header{
+        display: grid;
+        grid-template-rows: 50% 50%;
+        gap: 0.5em;
+        font-size: 0.9em;
+    }
+
+    .nav-tel{
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .nav-mail{
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .container-menu{
+        grid-column: 1/3;
+        grid-row: 2;
+        margin-bottom: 1em;
+    }
+
+    .menu{
+        justify-content: space-between;
+    }
+    
+    .about_us,
+    .contact{
+        width: 100%;
+        padding: 1.5em;
+    }
+
+    .our_work{
+        margin: 40px 0;
+        width: 100%;
+    }
+
+    .tile{
+        margin-bottom: 1em;
+    }
+
+    .portfolio{
+        display: block;
+        width: 100%;
+    }
+
+    .portfolio .nine{
+        display: none;
+    }
+       
+}
+   
+@media(max-width: 560px){
+   
+    .aside{
+        display: block;
+    }
+
+    .tel,
+    .mail{
+        font-size: 1.8em;
+        
+    }
+    .tel_mail{
+        margin-bottom: 1.5em;
+    }
+
+    iframe{
+        width: 100%;
+    }
+
+    .aside_2{
+        display: block;
+        font-size: 1em;
+    }
+
+    .aside_2 strong{
+        font-size: 1.5em;
+    }
+
+    .aside_2 div{
+        margin-bottom: 2em
+    }
+
+    footer p{
+        margin: 0 0.8em 0 0;
+        font-size: 0.9em;
+    }
+}
+
+@media(max-width: 415px){
+   
+    header{
+        font-size: 0.6em;
+    }
+    
+    .about_us,
+    .contact{
+        width: 100%;
+        padding: 1em;
+        
+    }
+
+    .tel_mail{
+        font-size: 15px;
+    }
+
+    footer{
+        padding: 2em 0;
+    }
+
+    footer p{
+        font-size: 0.8em;
+    }
+}
+
+/* JAVASCRIPT CLASS */
+
+.hidden{
+    display: none;
+}
