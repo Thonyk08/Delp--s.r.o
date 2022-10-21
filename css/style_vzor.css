@@ -201,7 +201,7 @@ ul{
 
 section .nine{
     background-color: white;
-    background-image: url(/img/DELP.png);
+    background-image: url("/img/DELP.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
